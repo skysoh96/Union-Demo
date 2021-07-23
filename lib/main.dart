@@ -94,6 +94,12 @@ class _MyHomePageState extends State<MyHomePage> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               crossAxisAlignment: CrossAxisAlignment.center,
                               children: <Widget>[
+				TrackingTextInput(
+                                    label: "Name",
+                                    hint: "What's your name?",
+                                    onCaretMoved: (Offset caret) {
+                                      _teddyController.lookAt(caret);
+                                    }),
                                 TrackingTextInput(
                                     label: "Email",
                                     hint: "What's your email address?",
