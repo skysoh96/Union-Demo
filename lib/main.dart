@@ -127,6 +127,10 @@ class _MyHomePageState extends State<MyHomePage> {
                                     onPressed: () {
                                       _teddyController.submitPassword();
                                     })
+                                Text(
+                                  "v1.1",
+                                  textAlign: TextAlign.center,
+                                )
                               ],
                             )),
                           )),
