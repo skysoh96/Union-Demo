@@ -131,7 +131,6 @@ class _MyHomePageState extends State<MyHomePage> {
                             )),
                           )),
 			Container(
-                        width: width,
                         child: Text(
                             "v1.1",
                             textAlign: TextAlign.center,
