@@ -118,7 +118,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                     _teddyController.setPassword(value);
                                   },
                                 ),
-                                SigninButton(
+                                Column(children: [
+					SigninButton(
                                     child: Text("Sign In",
                                         style: TextStyle(
                                             fontFamily: "RobotoMedium",
@@ -126,11 +127,12 @@ class _MyHomePageState extends State<MyHomePage> {
                                             color: Colors.white)),
                                     onPressed: () {
                                       _teddyController.submitPassword();
-                                    })
+                                    }),
                                 Text(
                                   "v1.1",
                                   textAlign: TextAlign.center,
                                 )
+				])
                               ],
                             )),
                           )),
